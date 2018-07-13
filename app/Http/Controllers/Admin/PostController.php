@@ -185,8 +185,8 @@ class PostController extends Controller
     public function approval($id)
     {
         $post = Post::find($id);
-        if ($post->is_approved == false) {
-            $post->is_approved == true;
+        if ($post->is_approved == 0) {
+            $post->is_approved = 1;
             $post->save();
 
             Toastr::success('Post Successfully Approved :)', 'Success');
