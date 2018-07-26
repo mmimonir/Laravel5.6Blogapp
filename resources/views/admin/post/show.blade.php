@@ -72,8 +72,8 @@
                             Featured Image
                         </h2>                        
                     </div>
-                    <div class="body">
-                        <img class="img-responsive thumbnail" src="{{ asset('storage/post/').$post->image }}">
+                    <div class="body">                        
+                        <img class="img-responsive thumbnail" src="{{ asset('storage/post/'.$post->image) }}">
                     </div>
                 </div>
             </div>
