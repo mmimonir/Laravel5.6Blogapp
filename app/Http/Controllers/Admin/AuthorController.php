@@ -26,4 +26,4 @@ class AuthorController extends Controller
         Toastr::success('Author Successfully Deleted', 'Success');
         return redirect()->back();
     }
-}
+    }
